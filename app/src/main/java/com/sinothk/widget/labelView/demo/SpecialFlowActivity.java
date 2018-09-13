@@ -31,30 +31,42 @@ public class SpecialFlowActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.special_flow);
+
         mChangeButton = (Button) findViewById(R.id.bt_change);
         mLayoutInflater = LayoutInflater.from(this);
         mLongClickButton = (Button) findViewById(R.id.bt_long_click);
-        mFlowLayout = (AutoFlowLayout) findViewById(R.id.afl_cotent);
+        mFlowLayout = findViewById(R.id.afl_cotent);
+
         mFlowLayout.setAdapter(new FlowAdapter(Arrays.asList(mData)) {
             @Override
-            public View getView(int position) {
+            public View getView(final int position) {
                 View item = mLayoutInflater.inflate(R.layout.special_item, null);
+
                 TextView tvAttrTag = (TextView) item.findViewById(R.id.tv_attr_tag);
                 tvAttrTag.setText(mData[position]);
+
                 return item;
             }
         });
+
         mFlowLayout.setOnItemClickListener(new AutoFlowLayout.OnItemClickListener() {
             @Override
             public void onItemClick(int position, View view) {
                 Toast.makeText(SpecialFlowActivity.this, mData[position], Toast.LENGTH_SHORT).show();
             }
         });
+
         mFlowLayout.setOnLongItemClickListener(new AutoFlowLayout.OnLongItemClickListener() {
             @Override
-            public void onLongItemClick(int position, View view) {
-                ImageView imageView = view.findViewById(R.id.iv_delete);
-                imageView.setVisibility(View.VISIBLE);
+            public void onLongItemClick(final int position, View view) {
+                ImageView iv_delete = view.findViewById(R.id.iv_delete);
+                iv_delete.setVisibility(View.VISIBLE);
+                iv_delete.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Toast.makeText(SpecialFlowActivity.this, "position： " + position, Toast.LENGTH_SHORT).show();
+                    }
+                });
             }
         });
     }

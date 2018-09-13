@@ -17,8 +17,10 @@ import com.sinothk.widget.labelView.style1.AutoFlowLayout;
 
 public class NormalFlowActivity extends AppCompatActivity implements View.OnClickListener {
     private AutoFlowLayout mFlowLayout;
+
     private String[] mData = {"Java","C++","Python","JavaScript","Ruby","Swift","MATLAB","Scratch","Drat","ABAP","COBOL","Fortran","Scala","Lisp",
     "Kotlin","Erlang","Groovy","Scheme","Rust","Logo","Prolog","LabVIEW"};
+
     private LayoutInflater mLayoutInflater;
     private Button mSingleButton;
     private Button mMultiLineButton;
@@ -27,10 +29,12 @@ public class NormalFlowActivity extends AppCompatActivity implements View.OnClic
     private Button mMultiSelectedButton;
     private Button mCenterButton;
     private int count = 10;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.normal_flow);
+
         mFlowLayout = (AutoFlowLayout) findViewById(R.id.afl_cotent);
         mLayoutInflater = LayoutInflater.from(this);
         mSingleButton = (Button) findViewById(R.id.bt_single);
