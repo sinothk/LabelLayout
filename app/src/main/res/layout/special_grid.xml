@@ -18,13 +18,13 @@
                 android:id="@+id/afl_cotent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:columnNumbers="4"
+                app:columnNumbers="3"
                 app:cutLine="false"
                 app:cutLineColor="@color/colorAccent"
                 app:cutLineWidth="1px"
                 app:horizontalSpace="5dp"
                 android:background="@color/colorPrimary"
-                app:rowNumbers="5"
+                app:rowNumbers="3"
                 app:verticalSpace="5dp" />
             
             <Button
