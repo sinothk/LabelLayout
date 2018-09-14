@@ -17,18 +17,18 @@ import java.util.Arrays;
 
 public class SpecialGridActivity extends AppCompatActivity {
     private AutoFlowLayout mFlowLayout;
-    private LayoutInflater mLayoutInflater;
-    private String[] mData = {"Java", "C++", "Python", "JavaScript", "Ruby", "Swift","Swift","MATLAB","Scratch"};
+    private String[] mData = {"Java", "C++", "Python", "JavaScript", "Ruby", "Swift", "Swift", "MATLAB", "Scratch"};
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.special_grid);
-        mLayoutInflater = LayoutInflater.from(this);
+
         mFlowLayout = (AutoFlowLayout) findViewById(R.id.afl_cotent);
         mFlowLayout.setAdapter(new FlowAdapter(Arrays.asList(mData)) {
             @Override
             public View getView(int position) {
-                View item = mLayoutInflater.inflate(R.layout.special_grid_item, null);
+                View item = LayoutInflater.from(SpecialGridActivity.this).inflate(R.layout.special_grid_item, null);
                 return item;
             }
         });
