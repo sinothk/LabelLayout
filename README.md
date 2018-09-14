@@ -4,11 +4,11 @@
 ## Step 1. Add the JitPack repository to your build file
 	
   allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
+	repositories {
+		...
+		maven { url 'https://jitpack.io' }
 	}
+  }
 
 ## Step 2. Add the dependency
 	dependencies {
@@ -24,8 +24,7 @@
     
 ## JAVA
 
-  private String[] mData = {"Java", "C++", "Python", "JavaScript", "Ruby", "Swift", "MATLAB", "Scratch", "Drat", "ABAP", "COBOL"};
-  
+  private String[] mData = {"Java", "C++", "Python", "JavaScript", "Ruby", "Swift", "MATLAB", "Scratch", "Drat"};
   mFlowLayout = findViewById(R.id.afl_cotent);
 
         mFlowLayout.setAdapter(new FlowAdapter(Arrays.asList(mData)) {
