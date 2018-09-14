@@ -1,6 +1,3 @@
-# 参考 
-
-	https://github.com/LRH1993/AutoFlowLayout
 
 # 引入
 ## Step 1. Add the JitPack repository to your build file
@@ -62,3 +59,5 @@
 	    }
 	});
   
+## 参考 
+	https://github.com/LRH1993/AutoFlowLayout
