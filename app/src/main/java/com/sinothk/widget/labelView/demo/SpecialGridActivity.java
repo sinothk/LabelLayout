@@ -17,7 +17,7 @@ import java.util.Arrays;
 
 public class SpecialGridActivity extends AppCompatActivity {
     private AutoFlowLayout mFlowLayout;
-    private String[] mData = {"Java", "C++", "Python", "JavaScript", "Ruby", "Swift", "Swift", "MATLAB", "Scratch"};
+    private String[] mData = {"Java", "C++", "Python", "JavaScript", "Ruby", "Swift", "Swift", "MATLAB", "Scratch", "C++", "Python", "JavaScript", "Ruby", "Swift", "Swift", "MATLAB", "Scratch", "C++", "Python", "JavaScript", "Ruby", "Swift", "Swift", "MATLAB", "Scratch", "C++", "Python", "JavaScript", "Ruby", "Swift", "Swift", "MATLAB", "Scratch"};
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

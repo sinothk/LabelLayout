@@ -16,15 +16,20 @@
 
             <com.sinothk.widget.labelView.style1.AutoFlowLayout
                 android:id="@+id/afl_cotent"
-                app:columnNumbers="3"
-                app:rowNumbers="3"
-                app:horizontalSpace="5dp"
-                app:verticalSpace="5dp"
-                app:cutLine="true"
-                app:cutLineWidth="1px"
-                app:cutLineColor="@color/colorAccent"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
+                android:layout_height="wrap_content"
+                app:columnNumbers="4"
+                app:cutLine="false"
+                app:cutLineColor="@color/colorAccent"
+                app:cutLineWidth="1px"
+                app:horizontalSpace="5dp"
+                android:background="@color/colorPrimary"
+                app:rowNumbers="5"
+                app:verticalSpace="5dp" />
+            
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="500dp" />
         </LinearLayout>
     </ScrollView>
 
