@@ -1,13 +1,15 @@
-# 参考 https://github.com/LRH1993/AutoFlowLayout
+# 参考 
+
+	https://github.com/LRH1993/AutoFlowLayout
 
 # 引入
 ## Step 1. Add the JitPack repository to your build file
 	
 	allprojects {
-	repositories {
-		...
-		maven { url 'https://jitpack.io' }
-	}
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
 	}
 
 ## Step 2. Add the dependency
